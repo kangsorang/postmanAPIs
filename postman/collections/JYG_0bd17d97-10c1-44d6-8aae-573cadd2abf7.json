@@ -158,7 +158,7 @@
                     }
                 },
                 "url": {
-                    "raw": "https://yookgak.com/dev-api/v1/tracking/cj?code=510029628933&os=ios",
+                    "raw": "https://yookgak.com/dev-api/v1/tracking/cj?code=510029628933&os=gg",
                     "protocol": "https",
                     "host": [
                         "yookgak",
@@ -177,7 +177,7 @@
                         },
                         {
                             "key": "os",
-                            "value": "ios"
+                            "value": "gg"
                         }
                     ]
                 }
