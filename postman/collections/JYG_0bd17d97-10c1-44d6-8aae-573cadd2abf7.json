@@ -1,0 +1,320 @@
+{
+    "info": {
+        "_postman_id": "9a0e3195-d6e9-4054-a2ac-e04fd4a8e695",
+        "name": "JYG",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Local API",
+            "id": "56a15f67-5265-490d-9b0a-8db2b10442fa",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"force\" : true,\r\n    \"barcode\" : \"A4204000F3013062022020420170141\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:5001/jyg-custom-dev/us-central1/requestRawmeatUsed",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5001",
+                    "path": [
+                        "jyg-custom-dev",
+                        "us-central1",
+                        "requestRawmeatUsed"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Local API Copy",
+            "id": "a167be88-39a7-4d1c-926f-eb2e0d5b1338",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"force\" : true,\r\n    \"barcode\" : \"A4204000F3013062022020420170141\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/requestRawmeatUsed",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "requestRawmeatUsed"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Dev API",
+            "id": "81819c23-d363-4a42-b8e3-0d67c75d1201",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"barcode\" : \"03106897055104600230006156\",\r\n    \"force\" : false\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://us-central1-jyg-custom-dev.cloudfunctions.net/requestRawmeatUsed",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-jyg-custom-dev",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": [
+                        "requestRawmeatUsed"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Prod API",
+            "id": "38a37cb6-d6e9-4073-9454-b866862b09e2",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"barcode\" : \"A3404000F3013062022021850830134\",\r\n    \"force\" : false\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://us-central1-jyg-custom.cloudfunctions.net/requestRawmeatUsed",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-jyg-custom",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": [
+                        "requestRawmeatUsed"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "test",
+            "id": "5a06e9db-d15e-485a-932b-016bd9223f64",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://yookgak.com/dev-api/v1/tracking/cj?code=510029628933&os=ios",
+                    "protocol": "https",
+                    "host": [
+                        "yookgak",
+                        "com"
+                    ],
+                    "path": [
+                        "dev-api",
+                        "v1",
+                        "tracking",
+                        "cj"
+                    ],
+                    "query": [
+                        {
+                            "key": "code",
+                            "value": "510029628933"
+                        },
+                        {
+                            "key": "os",
+                            "value": "ios"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CJ 1",
+            "id": "9ebbf8f2-6d6a-40fe-982e-8092cb691366",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"DATA\" : {\r\n        \"CUST_ID\": \"30442120\",\r\n        \"BIZ_REG_NUM\": \"2248700271\"\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://dxapi.cjlogistics.com:5052/ReqOneDayToken",
+                    "protocol": "https",
+                    "host": [
+                        "dxapi",
+                        "cjlogistics",
+                        "com"
+                    ],
+                    "port": "5052",
+                    "path": [
+                        "ReqOneDayToken"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CJ 1 mock",
+            "id": "f47fe253-0b2f-476a-aac6-b2ce46fbec93",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"DATA\" : {\r\n        \"CUST_ID\": \"30442120\",\r\n        \"BIZ_REG_NUM\": \"2248700271\"\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://dxapi.cjlogistics.com:5052/ReqOneDayToken",
+                    "protocol": "https",
+                    "host": [
+                        "dxapi",
+                        "cjlogistics",
+                        "com"
+                    ],
+                    "port": "5052",
+                    "path": [
+                        "ReqOneDayToken"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CJ 2",
+            "id": "e9a6c9ec-622b-4825-a6ae-07faac42f10d",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "CJ-Gateway-APIKey",
+                        "value": "fa0a184f-4f51-44cd-8116-a3bfd6e4414f",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"DATA\" : {\r\n        \"TOKEN_NUM\" : \"fa0a184f-4f51-44cd-8116-a3bfd6e4414f\",\r\n        \"CLNTNUM\": \"30442120\",\r\n        \"INVC_NO\": \"510029628933\"\r\n    }\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://dxapi.cjlogistics.com:5052/ReqOneGdsTrc",
+                    "protocol": "https",
+                    "host": [
+                        "dxapi",
+                        "cjlogistics",
+                        "com"
+                    ],
+                    "port": "5052",
+                    "path": [
+                        "ReqOneGdsTrc"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Prod API",
+            "id": "cff16ba2-b2e7-4219-a19b-0702de9eb542",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://us-central1-jyg-custom.cloudfunctions.net/requestRawmeatUsed",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-jyg-custom",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": [
+                        "requestRawmeatUsed"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
